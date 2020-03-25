@@ -62,7 +62,10 @@
             { name: "testImage", source: "ichbrauchnencoronatest%2310.jpeg" },
             { name: "testImage", source: "ichbrauchnencoronatest%2311.jpeg" },
             { name: "testImage", source: "ichbrauchnencoronatest%2312.jpeg" },
-            { name: "testImage", source: "ichbrauchnencoronatest%2313.jpeg" }]
+            { name: "testImage", source: "ichbrauchnencoronatest%2313.jpeg" },
+            { name: "testImage", source: "ichbrauchnencoronatest%2314.jpeg" },
+            { name: "testImage", source: "ichbrauchnencoronatest%2315.jpeg" },
+            { name: "testImage", source: "ichbrauchnencoronatest%2316.jpeg" }]
             var items = []
 
             for (const [index, value] of images.entries()) {
@@ -71,7 +74,7 @@
             console.log(items)
             return (
                 <div className="row">
-                    { items }
+                    {items}
                 </div>
             )
         }
@@ -79,7 +82,7 @@
         function Meme(props) {
             return (
                 <div className="col-lg-4 mt-5 mb-5 text-center">
-                    <img src={`./${props.source}`} class="img-fluid" alt="Responsive image"/>
+                    <img src={`./memes/${props.source}`} class="img-fluid" alt="Responsive image" />
                 </div>
             )
         }
